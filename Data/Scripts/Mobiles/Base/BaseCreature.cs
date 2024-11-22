@@ -7579,9 +7579,6 @@ namespace Server.Mobiles
 					p.PeacedUntil = DateTime.Now + TimeSpan.FromSeconds( MySettings.S_paralyzeDuration );
 					p.SendLocalizedMessage( 500616 ); // You hear lovely music, and forget to continue battling!
 					p.Combatant = null;
-					target.Warmode = false;
-					UndressItem( target, Layer.OneHanded );
-					UndressItem( target, Layer.TwoHanded );
 					BuffInfo.RemoveBuff( p, BuffIcon.PeaceMaking );
 					BuffInfo.AddBuff( p, new BuffInfo( BuffIcon.PeaceMaking, 1063664, TimeSpan.FromSeconds( MySettings.S_paralyzeDuration ), p ) );
 				}
