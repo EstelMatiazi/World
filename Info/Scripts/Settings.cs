@@ -136,7 +136,10 @@ namespace Server
 
 		public static int S_BoneDecay = 113;
 
+	// The setting below controls if mark/recall is available to traditionally restricted places like ambrosia, ravendark village, 
+	// caverns of poseidon and the like. Quest related worlds will remain blocked regardless of the chosen option.  
 
+		public static bool S_TravelRestrictions = true;
 
 
 	///////////////////////////////////////////////////////////////////////////////////////////////
